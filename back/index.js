@@ -12,11 +12,11 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-const corsConfig = {
+/* const corsConfig = {
   origin: ['https://projet-colis-and-co.vercel.app/', 'https://colis-and-co.up.railway.app/'],
-};
+}; */
 
-app.use(cors(corsConfig));
+app.use(cors());
 
 // Configure body-parser middleware
 app.use(bodyParser.json());
